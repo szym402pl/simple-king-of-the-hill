@@ -18,8 +18,8 @@ messages:
 
 koth-region:
   wg-region-name: "yourregion"
-  game-duration: 30
-  point-limit: 12
+  game-duration: 600
+  point-limit: 250
 
 hologram:
   text:

@@ -40,14 +40,16 @@ public class KOTHRegionRunnable extends BukkitRunnable {
         for (Player player : Bukkit.getOnlinePlayers()) {
             if (!Util.isInKOTHRegion(player) && !playersAndAddedPoints.containsKey(player.getUniqueId())) {
                 continue;
-            } else if (!Util.isInKOTHRegion(player)) {
-                Util.sendActionbar(player, "&cYou've left the &4&lKOTH &carea!    &cRush back if you don't want to lose!");
-                continue;
             }
 
             if (timer <= 10) {
                 player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_BASS, 1F, 1F);
                 player.sendTitle("", ChatColor.RED + "" + timer, 3, 20, 3);
+            }
+
+            if (!Util.isInKOTHRegion(player)) {
+                Util.sendActionbar(player, "&cYou've left the &4&lKOTH &carea!    &cRush back if you don't want to lose!");
+                continue;
             }
 
             addPoint(player);
