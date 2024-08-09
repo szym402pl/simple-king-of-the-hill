@@ -54,7 +54,7 @@ public class StatFactory {
     }
 
     public static ItemStack getPlayerStats(UUID uuid, boolean ownStats) {
-        PlayerData data = PlayerDataManager.getPlayerDataByUUID(uuid);
+        PlayerData data = manager.getPlayerDataByUUID(uuid);
         Player player = Bukkit.getPlayer(uuid);
 
         ItemStack stats = new ItemStack(Material.PLAYER_HEAD);

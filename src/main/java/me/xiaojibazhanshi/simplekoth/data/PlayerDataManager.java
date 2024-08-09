@@ -65,7 +65,7 @@ public class PlayerDataManager {
         saveData();
     }
 
-    public static PlayerData getPlayerDataByUUID(UUID uuid) {
+    public PlayerData getPlayerDataByUUID(UUID uuid) {
         Optional<PlayerData> selectedData = playerDataSet
                 .stream()
                 .filter(data -> data.getUuid().equals(uuid))

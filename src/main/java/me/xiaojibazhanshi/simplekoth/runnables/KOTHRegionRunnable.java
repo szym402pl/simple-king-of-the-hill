@@ -87,7 +87,7 @@ public class KOTHRegionRunnable extends BukkitRunnable {
         boolean isThereAWinner = winner != null;
 
         for (UUID key : playersAndAddedPoints.keySet()) {
-            PlayerData playerData = PlayerDataManager.getPlayerDataByUUID(key);
+            PlayerData playerData = manager.getPlayerDataByUUID(key);
             Player player = Bukkit.getPlayer(key);
 
             if (player == null) continue;

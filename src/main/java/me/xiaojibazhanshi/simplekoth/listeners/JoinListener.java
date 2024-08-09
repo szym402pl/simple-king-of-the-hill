@@ -16,7 +16,7 @@ public class JoinListener implements Listener {
         PlayerDataManager manager = SimpleKOTH.getPlayerDataManager();
         UUID uuid = event.getPlayer().getUniqueId();
 
-        if (!PlayerDataManager.playerDataSet.contains(PlayerDataManager.getPlayerDataByUUID(uuid))) {
+        if (!PlayerDataManager.playerDataSet.contains(manager.getPlayerDataByUUID(uuid))) {
             PlayerData cleanData = new PlayerData(uuid, 0, 0, 0);
             manager.overridePlayerData(PlayerDataManager.playerDataSet, cleanData);
         }
