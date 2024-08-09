@@ -1,0 +1,29 @@
+# Made by XiaoJibaZhanshi
+
+# winner-selected message accepts {winner} as a placeholder
+# Hologram text accepts {timer} as a placeholder
+# The time unit for game-duration is a second
+
+hologram-setup-permission: "yourserver.permission"
+
+# Only sends to those who attended KOTH
+titles:
+  loser: "&cYou've lost!"
+  winner: "&aYou've won!"
+
+# Global messages, sent to everyone
+messages:
+  winner-absent: "&4&l[KOTH] &cGame ended with no one being the winner!"
+  winner-present: "&4&l[KOTH] &aGame ended with the winner being &6{winner}&a!"
+
+koth-region:
+  wg-region-name: "yourregion"
+  game-duration: 30
+  point-limit: 12
+
+hologram:
+  text:
+    - "&4&l[KOTH]"
+    - "&aGame ends in:"
+    - "&c{timer}"
+  location:

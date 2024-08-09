@@ -1,0 +1,11 @@
+name: SimpleKOTH
+version: '1'
+main: me.xiaojibazhanshi.simplekoth.SimpleKOTH
+api-version: '1.20'
+authors: [ XiaoJibaZhanshi ]
+description: Challenges, yay
+depend: [WorldGuard]
+commands:
+  koth:
+    description: KOTH command
+    usage: /koth
